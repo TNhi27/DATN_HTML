@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Gugi&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -9,7 +10,7 @@
   align-items: center;
   background: #316b83;
   color: rgb(255, 255, 255);
-  padding: 20px 100px;
+  padding: 10px 100px;
 }
 .top-info a {
   color: rgb(255, 255, 255);
@@ -20,6 +21,13 @@
   padding-left: 20px;
 }
 
+.top-text {
+  display: flex;
+}
+.top-link {
+  display: flex;
+}
+
 header {
   height: 90vh;
   background-image: url(../image/background.png);
@@ -27,12 +35,11 @@ header {
   background-size: cover;
 }
 
-.hero {
+.hero .item {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 80%;
-  margin: auto;
+
   padding-top: 20px;
 }
 .hero .search {
@@ -42,7 +49,6 @@ header {
   display: flex;
   align-items: center;
   overflow: hidden;
-
 }
 
 .hero .search input {
@@ -54,48 +60,136 @@ header {
 }
 .hero i {
   cursor: pointer;
-  padding:0px 20px;
+  padding: 0px 20px;
 }
 
-
-.cel{
-    width: 12px;
-    height: 12px;
-    background:#927ee9;
-    
+.hero {
+  width: 80%;
+  margin: auto;
 }
-.line{
-    width: 160px;
-    height: 10px;
-    background:#63B4B8;
-    margin:5px 0px;
+.hero nav {
+  width: 80%;
+  margin: 20px auto;
 }
-.line2{
-    width: 100px;
-    height: 10px;
-    background:#85adaf;
-    margin:5px 0px;
-}
-.line3{
-    width: 50px;
-    height: 10px;
-    background:#8f9c9c;
-    margin:5px 0px;
+.hero nav ul {
+  display: flex;
+  justify-content: space-between;
 }
 
-.text{
-    position: absolute;
-    top: 50%;
-    left:100px;
-    transform: translateY(-50%);
+.hero nav ul li {
+  display: inline-block;
 }
-.text .content{
-    display: flex;
-    font-size:20px;
-    margin-top: 20px;
-    font-weight: bold;
-    align-items: center;
+.hero nav ul li:hover a {
+  color: rgb(236, 179, 20);
 }
-.text h1{
-    font-size: 40px;
+.hero nav ul li a {
+  text-decoration: none;
+  color: black;
+  padding: 10px;
+  font-size: 18px;
+}
+
+.icon {
+  margin-left: -10px;
+}
+.fa-th-large {
+  margin-right: -10px;
+}
+
+.drop {
+  position: relative;
+}
+.drop ul {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  z-index: 100;
+  background: rgb(214, 212, 212);
+  width: 100%;
+}
+
+.drop ul li {
+  font-size: 16px;
+  height: 40px;
+  line-height: 40px;
+  white-space: nowrap;
+  cursor: pointer;
+  padding: 0 20px;
+}
+.drop ul li:hover {
+  background: red;
+}
+.cel {
+  width: 12px;
+  height: 12px;
+  background: #927ee9;
+}
+.line {
+  width: 160px;
+  height: 10px;
+  background: #63b4b8;
+  margin: 5px 0px;
+}
+.line2 {
+  width: 100px;
+  height: 10px;
+  background: #85adaf;
+  margin: 5px 0px;
+}
+.line3 {
+  width: 50px;
+  height: 10px;
+  background: #8f9c9c;
+  margin: 5px 0px;
+}
+header {
+  position: relative;
+}
+.text {
+  position: absolute;
+  top: 50%;
+  left: 100px;
+  transform: translateY(-50%);
+}
+.text .content {
+  display: flex;
+  font-size: 20px;
+  margin-top: 20px;
+  font-weight: bold;
+  align-items: center;
+}
+.text h1 {
+  font-size: 40px;
+  font-family: "Gugi", cursive;
+}
+.text a {
+  margin-top: 50px;
+  color: red;
+  padding: 20px 30px;
+}
+
+.danh-muc {
+  width: 80%;
+  margin: auto;
+  padding: 20px 0;
+}
+.danh-muc .top {
+  display: flex;
+  align-items: center;
+  font-size: 25px;
+}
+.danh-muc .top i {
+  margin-right: 10px;
+  font-weight: 700;
+}
+.danh-muc .body {
+  display: flex;
+
+  flex-wrap: wrap;
+  height: unset;
+}
+.danh-muc .body .item {
+  padding: 20px;
+  box-shadow: rgb(3 0 71 / 9%) 0px 1px 3px;
+  font-size: 16px;
 }
