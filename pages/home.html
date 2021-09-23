@@ -28,7 +28,7 @@
             <a href="#"> <i class="far fa-question-circle"></i> Hỗ trợ</a>
         </div>
     </div>
-    <div class="hero">
+    <div id="hero" class="hero">
         <div class="item">
             <div class="logo">
                 <img width="130px"
@@ -43,12 +43,12 @@
             </div>
             <i style="color: white;"
                 class="fas fa-user-circle fa-2x peple"></i>
-            <a onclick="show()" class="show-menu"><i class="fas fa-bars"></i></a>
+            <a id="btn-show" onclick="show()" class="show-menu"><i class="fas fa-bars"></i></a>
            
             
         </div>
        
-        <div style="top: 50%;" id="text" class="text">
+        <div  id="text" class="text">
             <h1>Nguồn hàng khổng lồ từ </h1>
             <div class="line"></div>
             <div class="line2"></div>
@@ -70,19 +70,9 @@
                 <button class="btn-ef ">Tạo tài khoản</button>
             </div>
         </div>
-        <nav style="display:block;" id="nav-menu">
+        <nav  id="nav-menu">
             <ul>
 
-                <div class="search-re">
-                    <i class="fas fa-search"></i>
-                    <input type="text"
-                        placeholder="Nhập tên sản phẩm">
-                </div>
-                <div class="icon-re"
-                    style="text-align: center;">
-                    <i style="color: white;"
-                        class="fas fa-user-circle fa-2x peple"></i>
-                </div>
                 <li><a href="">Trang chủ</a></li>
                 <li><a href="">Giới thiệu</a></li>
                 <li><a href="">Hướng dẫn sử dụng</a></li>
@@ -90,8 +80,10 @@
                 <li><a href="">Liên hệ</a></li>
                 <li><a href="">Chính sách</a></li>
             </ul>
+           
         </nav>
     </div>
+   
 
     <section class="danh-muc">
         <div class="top">
@@ -499,30 +491,31 @@
             </div>
         </div>
     </footer>
+   <a href="#hero" class="up-top"><i  class="fas fa-chevron-up"></i></a>
     <script>
       
         var menu = document.getElementById("nav-menu");
         var text = document.getElementById("text");
         var ds = document.getElementById("body-ds");
-        window.addEventListener("load",()=>{
-            var win = window.screen.availWidth;
-            if (win<=540) {
-                text.style.top="67%";
-                menu.style.display="block";
-            }else{
-                text.style.top="50%";
-                menu.style.display="none";
-            }
+        var btn = document.getElementById("btn-show")
+        var cl = document.getElementById("close");
+        cl.addEventListener("click",()=>{
+            menu.style.right="-50%"
         })
+     
         function show() {
-            if (menu.style.display==="none") {
-                menu.style.display="block";
-                text.style.top="67%";
-            }else{
-                menu.style.display="none";
-                text.style.top="50%";
-            }
+            // if (menu.style.display==="none") {
+            //     menu.style.display="block";
+            //     text.style.display="none";
+            // }else{
+            //     menu.style.display="none";
+            //     text.style.display="block";
+            // }
+            menu.classList.toggle("menu-active")
+              
         }
+
+
 
         function showds() {
             if (ds.style.display!=="none") {
