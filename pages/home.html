@@ -1,42 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible"
+        content="IE=edge">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
     <title>Home</title>
-    <link rel="stylesheet" href="../css/home.css">
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet"
+        href="../css/home.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
 </head>
+
 <body>
     <div class="top-info">
-        <div>
+        <div class='top-text'>
             <i class="fas fa-phone"></i>
             0938648573
             <i class="fas fa-envelope"></i>
             contact.ok200@gmail.com
         </div>
-        <div>
-            <a href="#">Liên hệ</a>
-            <a href="#">Hỗ trợ</a>
+        <div class="top-link">
+            <a href="#"> <i class="fas fa-headset"></i> Liên hệ</a>
+           
+            <a href="#"> <i class="far fa-question-circle"></i> Hỗ trợ</a>
         </div>
     </div>
-    <header>
-        <div class="hero">
+    <div id="hero" class="hero">
+
+        
+        <!-- bat dau header -->
+        <div class="item">
             <div class="logo">
-                <img width="130px" height="60px" src="../image/logo.jpg" alt="">
+                <img width="130px"
+                    height="80px"
+                    src="../image/logo.png"
+                    alt="">
             </div>
             <div class="search">
                 <i class="fas fa-search"></i>
-                <input type="text">
+                <input type="text"
+                    placeholder="Nhập tên sản phẩm">
             </div>
-            <i class="fas fa-user-circle fa-2x"></i>
+            <i style="color: white;"
+                class="fas fa-user-circle fa-2x peple"></i>
+            <a id="btn-show" onclick="show()" class="show-menu"><i class="fas fa-bars"></i></a>
+           
+            
         </div>
-        <div class="text">
-            <h1>Nguồn hàng khổng lồ từ</h1>
-           <div class="line"></div>
-           <div class="line2"></div>
-           <div class="line3"></div>
+        <nav  id="nav-menu">
+            <ul>
+
+                <li><a href="">Trang chủ</a></li>
+                <li><a href="">Giới thiệu</a></li>
+                <li><a href="">Hướng dẫn sử dụng</a></li>
+                <li><a href="">Tin tức</a></li>
+                <li><a href="">Liên hệ</a></li>
+                <li><a href="">Chính sách</a></li>
+            </ul>
+           
+        </nav>
+       
+        <!-- kết thúc header -->
+
+
+
+        <div  id="text" class="text">
+            <h1>Nguồn hàng khổng lồ từ </h1>
+            <div class="line"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
             <div class="content">
                 <div class="cel"></div>
                 Xưởng sản xuất trong nước
@@ -45,16 +80,459 @@
                 <div class="cel"></div>
                 Các thương hiệu đình đám
             </div>
+
             <div class="content">
                 <div class="cel"></div>
-                Các thương hiệu nhỏ
+                Nguồn hàng nước ngoài
             </div>
-            <div class="content">
-                <div class="cel"></div>
-               Nguồn hàng nước ngoài
+            <div class="dangki">
+                <button class="btn-ef ">Tạo tài khoản</button>
             </div>
         </div>
-    </header>
+       
+    </div>
    
+
+    <section class="danh-muc">
+        <div class="top">
+            <i onclick="showds()" class="fas fa-th-large "></i>
+            Danh mục sản phẩm 
+           
+        </div>
+        <div style="display:flex" id="body-ds" class="body">
+            <div class="item">
+                Thời trang nữ
+            </div>
+            <div class="item">
+                Thời trang nữ
+            </div>
+            <div class="item">
+                Thời trang nữ
+            </div>
+            <div class="item">
+                Thời trang nữ
+            </div>
+            <div class="item">
+                Thời trang nữ
+            </div>
+            <div class="item">
+                Thời trang nữ
+            </div>
+            <div class="item">
+                Thời trang nữ
+            </div>
+            <div class="item">
+                Thời trang nữ
+            </div>
+            <div class="item">
+                Thời trang nữ
+            </div>
+            <div class="item">
+                Thời trang nữ
+            </div>
+            <div class="item">
+                Thời trang nữ
+            </div>
+            <div class="item">
+                Thời trang nữ
+            </div>
+        </div>
+    </section>
+    <section class="san-pham-moi">
+        <div class="top">
+
+            <span> <i class="fas fa-bullhorn"></i>Sản phẩm mới</span>
+            <span class="more"><span>Xem thêm</span> <i class="fas fa-angle-right icon"></i></span>
+        </div>
+        <div class="list-sp">
+            <div class="san-pham">
+                <span class="tag-new">Sản phẩm mới</span>
+
+                <img src="https://images.pexels.com/photos/1852382/pexels-photo-1852382.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                    alt="">
+                <span class="sp-name">Áo sơ mi nữ</span>
+                <span class="sp-ncc"> <i class="fas fa-store-alt"></i> Nhà cung cấp FPT</span>
+                <span class="sp-gia"> <i class="fas fa-dollar-sign"></i> Giá CTV: 340.000 VND</span>
+                <span class="sp-gia"> <i class="fas fa-hand-holding-usd"></i> Giá sỉ (10 cái): 340.000 VND</span>
+                <div class="bottom">
+                    <a href="">Đăng kí sản phẩm</a>
+                    <a href="">Chi tiết</a>
+                </div>
+            </div>
+            <div class="san-pham">
+                <span class="tag-new">Sản phẩm mới</span>
+
+                <img src="https://images.pexels.com/photos/1852382/pexels-photo-1852382.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                    alt="">
+                <span class="sp-name">Áo sơ mi nữ</span>
+                <span class="sp-ncc"> <i class="fas fa-store-alt"></i> Nhà cung cấp FPT</span>
+                <span class="sp-gia"> <i class="fas fa-dollar-sign"></i> Giá CTV: 340.000 VND</span>
+                <span class="sp-gia"> <i class="fas fa-hand-holding-usd"></i> Giá sỉ (10 cái): 340.000 VND</span>
+                <div class="bottom">
+                    <a href="">Đăng kí sản phẩm</a>
+                    <a href="">Chi tiết</a>
+                </div>
+            </div>
+            <div class="san-pham">
+                <span class="tag-new">Sản phẩm mới</span>
+
+                <img src="https://images.pexels.com/photos/1852382/pexels-photo-1852382.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                    alt="">
+                <span class="sp-name">Áo sơ mi nữ</span>
+                <span class="sp-ncc"> <i class="fas fa-store-alt"></i> Nhà cung cấp FPT</span>
+                <span class="sp-gia"> <i class="fas fa-dollar-sign"></i> Giá CTV: 340.000 VND</span>
+                <span class="sp-gia"> <i class="fas fa-hand-holding-usd"></i> Giá sỉ (10 cái): 340.000 VND</span>
+                <div class="bottom">
+                    <a href="">Đăng kí sản phẩm</a>
+                    <a href="">Chi tiết</a>
+                </div>
+            </div>
+            <div class="san-pham">
+                <span class="tag-new">Sản phẩm mới</span>
+
+                <img src="https://images.pexels.com/photos/1852382/pexels-photo-1852382.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                    alt="">
+                <span class="sp-name">Áo sơ mi nữ</span>
+                <span class="sp-ncc"> <i class="fas fa-store-alt"></i> Nhà cung cấp FPT</span>
+                <span class="sp-gia"> <i class="fas fa-dollar-sign"></i> Giá CTV: 340.000 VND</span>
+                <span class="sp-gia"> <i class="fas fa-hand-holding-usd"></i> Giá sỉ (10 cái): 340.000 VND</span>
+                <div class="bottom">
+                    <a href="">Đăng kí sản phẩm</a>
+                    <a href="">Chi tiết</a>
+                </div>
+            </div>
+            <div class="san-pham">
+                <span class="tag-new">Sản phẩm mới</span>
+
+                <img src="https://images.pexels.com/photos/1852382/pexels-photo-1852382.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                    alt="">
+                <span class="sp-name">Áo sơ mi nữ</span>
+                <span class="sp-ncc"> <i class="fas fa-store-alt"></i> Nhà cung cấp FPT</span>
+                <span class="sp-gia"> <i class="fas fa-dollar-sign"></i> Giá CTV: 340.000 VND</span>
+                <span class="sp-gia"> <i class="fas fa-hand-holding-usd"></i> Giá sỉ (10 cái): 340.000 VND</span>
+                <div class="bottom">
+                    <a href="">Đăng kí sản phẩm</a>
+                    <a href="">Chi tiết</a>
+                </div>
+            </div>
+            <div class="san-pham">
+                <span class="tag-new">Sản phẩm mới</span>
+
+                <img src="https://images.pexels.com/photos/1852382/pexels-photo-1852382.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                    alt="">
+                <span class="sp-name">Áo sơ mi nữ</span>
+                <span class="sp-ncc"> <i class="fas fa-store-alt"></i> Nhà cung cấp FPT</span>
+                <span class="sp-gia"> <i class="fas fa-dollar-sign"></i> Giá CTV: 340.000 VND</span>
+                <span class="sp-gia"> <i class="fas fa-hand-holding-usd"></i> Giá sỉ (10 cái): 340.000 VND</span>
+                <div class="bottom">
+                    <a href="">Đăng kí sản phẩm</a>
+                    <a href="">Chi tiết</a>
+                </div>
+            </div>
+            <div class="san-pham">
+                <span class="tag-new">Sản phẩm mới</span>
+
+                <img src="https://images.pexels.com/photos/1852382/pexels-photo-1852382.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                    alt="">
+                <span class="sp-name">Áo sơ mi nữ</span>
+                <span class="sp-ncc"> <i class="fas fa-store-alt"></i> Nhà cung cấp FPT</span>
+                <span class="sp-gia"> <i class="fas fa-dollar-sign"></i> Giá CTV: 340.000 VND</span>
+                <span class="sp-gia"> <i class="fas fa-hand-holding-usd"></i> Giá sỉ (10 cái): 340.000 VND</span>
+                <div class="bottom">
+                    <a href="">Đăng kí sản phẩm</a>
+                    <a href="">Chi tiết</a>
+                </div>
+            </div>
+            <div class="san-pham">
+                <span class="tag-new">Sản phẩm mới</span>
+
+                <img src="https://images.pexels.com/photos/1852382/pexels-photo-1852382.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                    alt="">
+                <span class="sp-name">Áo sơ mi nữ</span>
+                <span class="sp-ncc"> <i class="fas fa-store-alt"></i> Nhà cung cấp FPT</span>
+                <span class="sp-gia"> <i class="fas fa-dollar-sign"></i> Giá CTV: 340.000 VND</span>
+                <span class="sp-gia"> <i class="fas fa-hand-holding-usd"></i> Giá sỉ (10 cái): 340.000 VND</span>
+                <div class="bottom">
+                    <a href="">Đăng kí sản phẩm</a>
+                    <a href="">Chi tiết</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="ncc">
+        <div class="ncc-top">
+            <span> <i class="fas fa-store"></i></i>Nhà cung cấp nổi bật</span>
+            <span class="more"><span>Xem thêm</span> <i class="fas fa-angle-right icon"></i></span>
+
+        </div>
+        <div class="list-ncc">
+            <div class="nha-cung-cap">
+                <img src="https://images.pexels.com/photos/821365/pexels-photo-821365.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                    alt="">
+                <div class="top">
+                    <h3><a href="">Thế giới ăn vặt</a></h3>
+                    <div>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+
+                    <h4><i class="fas fa-map-marker-alt"></i> Q4, TP.HCM</h4>
+                    <h4><i class="fas fa-phone"></i> 0948573823</h4>
+                    <a href=""> <img
+                            src="https://compressnow.funipos.net/?image=https://usercontentcdn.funipos.net/funimart/images/5fc9c26a6c429902c2998a04/5f4a05ea59278b4b0a1542f6_1607738039368_b87fe96b-a502-4a58-a804-2aa0c3dff4ed.png&width=100&height=100"
+                            alt=""
+                            class="avt">
+                    </a>
+                </div>
+
+            </div>
+            <h3> <i class="fas fa-play"></i> Sản phẩm nổi bật của nhà cung cấp này</h3>
+            <div class="list-sp">
+                <div class="san-pham">
+                    <span class="tag-new">Sản phẩm mới</span>
+
+                    <img src="https://images.pexels.com/photos/1852382/pexels-photo-1852382.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                        alt="">
+                    <span class="sp-name">Áo sơ mi nữ</span>
+                    <span class="sp-ncc"> <i class="fas fa-store-alt"></i> Nhà cung cấp FPT</span>
+                    <span class="sp-gia"> <i class="fas fa-dollar-sign"></i> Giá CTV: 340.000 VND</span>
+                    <span class="sp-gia"> <i class="fas fa-hand-holding-usd"></i> Giá sỉ (10 cái): 340.000 VND</span>
+                    <div class="bottom">
+                        <a href="">Đăng kí sản phẩm</a>
+                        <a href="">Chi tiết</a>
+                    </div>
+                </div>
+                <div class="san-pham">
+                    <span class="tag-new">Sản phẩm mới</span>
+
+                    <img src="https://images.pexels.com/photos/1852382/pexels-photo-1852382.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                        alt="">
+                    <span class="sp-name">Áo sơ mi nữ</span>
+                    <span class="sp-ncc"> <i class="fas fa-store-alt"></i> Nhà cung cấp FPT</span>
+                    <span class="sp-gia"> <i class="fas fa-dollar-sign"></i> Giá CTV: 340.000 VND</span>
+                    <span class="sp-gia"> <i class="fas fa-hand-holding-usd"></i> Giá sỉ (10 cái): 340.000 VND</span>
+                    <div class="bottom">
+                        <a href="">Đăng kí sản phẩm</a>
+                        <a href="">Chi tiết</a>
+                    </div>
+                </div>
+                <div class="san-pham">
+                    <span class="tag-new">Sản phẩm mới</span>
+
+                    <img src="https://images.pexels.com/photos/1852382/pexels-photo-1852382.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                        alt="">
+                    <span class="sp-name">Áo sơ mi nữ</span>
+                    <span class="sp-ncc"> <i class="fas fa-store-alt"></i> Nhà cung cấp FPT</span>
+                    <span class="sp-gia"> <i class="fas fa-dollar-sign"></i> Giá CTV: 340.000 VND</span>
+                    <span class="sp-gia"> <i class="fas fa-hand-holding-usd"></i> Giá sỉ (10 cái): 340.000 VND</span>
+                    <div class="bottom">
+                        <a href="">Đăng kí sản phẩm</a>
+                        <a href="">Chi tiết</a>
+                    </div>
+                </div>
+                <div class="san-pham">
+                    <span class="tag-new">Sản phẩm mới</span>
+
+                    <img src="https://images.pexels.com/photos/1852382/pexels-photo-1852382.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                        alt="">
+                    <span class="sp-name">Áo sơ mi nữ</span>
+                    <span class="sp-ncc"> <i class="fas fa-store-alt"></i> Nhà cung cấp FPT</span>
+                    <span class="sp-gia"> <i class="fas fa-dollar-sign"></i> Giá CTV: 340.000 VND</span>
+                    <span class="sp-gia"> <i class="fas fa-hand-holding-usd"></i> Giá sỉ (10 cái): 340.000 VND</span>
+                    <div class="bottom">
+                        <a href="">Đăng kí sản phẩm</a>
+                        <a href="">Chi tiết</a>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+            <div class="nha-cung-cap">
+                <img src="https://images.pexels.com/photos/821365/pexels-photo-821365.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                    alt="">
+                <div class="top">
+                    <h3><a href="">Thế giới ăn vặt</a></h3>
+                    <div>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+
+                    <h4><i class="fas fa-map-marker-alt"></i> Q4, TP.HCM</h4>
+                    <h4><i class="fas fa-phone"></i> 0948573823</h4>
+                    <a href=""> <img
+                            src="https://compressnow.funipos.net/?image=https://usercontentcdn.funipos.net/funimart/images/5fc9c26a6c429902c2998a04/5f4a05ea59278b4b0a1542f6_1607738039368_b87fe96b-a502-4a58-a804-2aa0c3dff4ed.png&width=100&height=100"
+                            alt=""
+                            class="avt">
+                    </a>
+                </div>
+            </div>
+            <div class="list-sp">
+                <div class="san-pham">
+                    <span class="tag-new">Sản phẩm mới</span>
+
+                    <img src="https://images.pexels.com/photos/1852382/pexels-photo-1852382.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                        alt="">
+                    <span class="sp-name">Áo sơ mi nữ</span>
+                    <span class="sp-ncc"> <i class="fas fa-store-alt"></i> Nhà cung cấp FPT</span>
+                    <span class="sp-gia"> <i class="fas fa-dollar-sign"></i> Giá CTV: 340.000 VND</span>
+                    <span class="sp-gia"> <i class="fas fa-hand-holding-usd"></i> Giá sỉ (10 cái): 340.000 VND</span>
+                    <div class="bottom">
+                        <a href="">Đăng kí sản phẩm</a>
+                        <a href="">Chi tiết</a>
+                    </div>
+                </div>
+                <div class="san-pham">
+                    <span class="tag-new">Sản phẩm mới</span>
+
+                    <img src="https://images.pexels.com/photos/1852382/pexels-photo-1852382.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                        alt="">
+                    <span class="sp-name">Áo sơ mi nữ</span>
+                    <span class="sp-ncc"> <i class="fas fa-store-alt"></i> Nhà cung cấp FPT</span>
+                    <span class="sp-gia"> <i class="fas fa-dollar-sign"></i> Giá CTV: 340.000 VND</span>
+                    <span class="sp-gia"> <i class="fas fa-hand-holding-usd"></i> Giá sỉ (10 cái): 340.000 VND</span>
+                    <div class="bottom">
+                        <a href="">Đăng kí sản phẩm</a>
+                        <a href="">Chi tiết</a>
+                    </div>
+                </div>
+                <div class="san-pham">
+                    <span class="tag-new">Sản phẩm mới</span>
+
+                    <img src="https://images.pexels.com/photos/1852382/pexels-photo-1852382.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                        alt="">
+                    <span class="sp-name">Áo sơ mi nữ</span>
+                    <span class="sp-ncc"> <i class="fas fa-store-alt"></i> Nhà cung cấp FPT</span>
+                    <span class="sp-gia"> <i class="fas fa-dollar-sign"></i> Giá CTV: 340.000 VND</span>
+                    <span class="sp-gia"> <i class="fas fa-hand-holding-usd"></i> Giá sỉ (10 cái): 340.000 VND</span>
+                    <div class="bottom">
+                        <a href="">Đăng kí sản phẩm</a>
+                        <a href="">Chi tiết</a>
+                    </div>
+                </div>
+                <div class="san-pham">
+                    <span class="tag-new">Sản phẩm mới</span>
+
+                    <img src="https://images.pexels.com/photos/1852382/pexels-photo-1852382.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                        alt="">
+                    <span class="sp-name">Áo sơ mi nữ</span>
+                    <span class="sp-ncc"> <i class="fas fa-store-alt"></i> Nhà cung cấp FPT</span>
+                    <span class="sp-gia"> <i class="fas fa-dollar-sign"></i> Giá CTV: 340.000 VND</span>
+                    <span class="sp-gia"> <i class="fas fa-hand-holding-usd"></i> Giá sỉ (10 cái): 340.000 VND</span>
+                    <div class="bottom">
+                        <a href="">Đăng kí sản phẩm</a>
+                        <a href="">Chi tiết</a>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <section class="about">
+        <h2>Chính sách vận hành</h2>
+        <div class="line"></div>
+        <div class="line2"></div>
+        <div class="container">
+            <div class="col-about">
+                <img src="../image/truck-1.1s-200px.png"
+                    alt="">
+                <h3>Không giao hàng</h3>
+                <p>Cộng tác viên chỉ cần chốt đơn, việc còn lại để chúng tôi lo</p>
+            </div>
+            <div class="col-about">
+                <img src="../image/payment-1.1s-200px.png"
+                    alt="">
+                <h3>Không cọc</h3>
+                <p>Không cọc tiền hàng, không thanh toán trước</p>
+            </div>
+            <div class="col-about">
+                <img src="../image/sign-1.1s-200px.png"
+                    alt="">
+                <h3>Chính sách minh bạch</h3>
+                <p>Chính sách bảo vệ quyền lợi Cộng tác viên luôn được ưu tiên hàng đầu</p>
+            </div>
+            <div class="col-about">
+                <img src="../image/customer service-1.1s-200px.png"
+                    alt="">
+                <h3>Luôn láng nghe và hỗ trợ 24/7</h3>
+                <p>Đội ngũ hỗ trợ 1 kèm 1 tận tình, giúp bạn bắt đầu kinh doanh tiện lợi</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="col">
+            <img width="130px"
+                src="../image/logo.png"
+                alt="">
+            Drop là sàn thương mại điện tử về nguồn hàng kinh doanh online giúp kết nối nhà sản xuất với người bán hàng
+            ở khắp cả nước.
+        </div>
+        <div class="col">
+            <h3>Về chúng tôi</h3>
+            <ul>
+                <li>Về chúng tôi</li>
+                <li>Tiêu chuẩn cộng đồng</li>
+                <li>Hướng dẫn sử dụng</li>
+            </ul>
+        </div>
+        <div class="col">
+            <h3>Liên hệ chúng tôi</h3>
+            <ul>
+                <li>Nguyễn Văn Linh, An Khánh, Ninh Kiều, TP.Cần Thơ</li>
+                <li>Email : Contact.ok200@gmail.com</li>
+                <li>Phone : 0948482745</li>
+            </ul>
+            <div class="socal">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-instagram-square"></i>
+            </div>
+        </div>
+    </footer>
+   <a href="#hero" class="up-top"><i  class="fas fa-chevron-up"></i></a>
+    <script>
+      
+        var menu = document.getElementById("nav-menu");
+        var text = document.getElementById("text");
+        var ds = document.getElementById("body-ds");
+        var btn = document.getElementById("btn-show")
+        var cl = document.getElementById("close");
+        cl.addEventListener("click",()=>{
+            menu.style.right="-50%"
+        })
+     
+        function show() {
+            // if (menu.style.display==="none") {
+            //     menu.style.display="block";
+            //     text.style.display="none";
+            // }else{
+            //     menu.style.display="none";
+            //     text.style.display="block";
+            // }
+            menu.classList.toggle("menu-active")
+              
+        }
+
+
+
+        function showds() {
+            if (ds.style.display!=="none") {
+                ds.style.display="none"
+            }else{
+                ds.style.display="flex"
+            }
+        }
+    </script>
 </body>
+
 </html>
