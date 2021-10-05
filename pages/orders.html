@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!--Bootstrap 5-->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
+
+    <!--AngularJS-->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+
+    <!--Jquery ajax-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+    <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <li class="nav-item" role="presentation"><a class="nav-link active" id="home-tab" data-bs-toggle="tab"
+                href="#home" role="tab" aria-controls="home" aria-selected="true">CHI TIẾT</a></li>
+        <li class="nav-item" role="presentation"><a class="nav-link" id="profile-tab" data-bs-toggle="tab"
+                href="#profile" role="tab" aria-controls="profile" aria-selected="false">DANH SÁCH</a></li>
+    </ul>
+
+    <div class="tab-content" id="myTabContent">
+        <!-- TAB TT -->
+        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+            <div class="container">
+                <div class="row">
+
+                    <div class="tab-pane fade show active" id="cn" role="tabpanel" aria-labelledby="home-tab">
+                        <div class="card">
+                          <div class="card-header">
+                            <i class="fa fa-pencil-square-o fa-2x" style="vertical-align: middle;" aria-hidden="true"></i>
+                            CHI TIẾT ĐƠN HÀNG
+                          </div>
+                          <div class="card-body">
+                            <div class="row">
+                              <label for="">Tên Sản Phẩm:</label>
+                              <a href="">tên nè</a>
+                              <label for="">Ngày Tạo Đơn:</label>
+                              <a href="">mm/dd/yy</a> 
+                              <label for="">Địa Chỉ Giao:</label>
+                              <a href="">.....</a>
+                              <label for="">Tên Khách Hàng:</label>
+                              <a href="">tên nè</a>
+                              <label for="">SDT Khách Hàng:</label>
+                              <a href="">sdt nè</a>
+                              <label for="">Payment:</label>
+                              <select id="inputState" class="form-control">
+                                <option selected>Thanh Toán Khi Nhận Hàng</option>
+                                <option></option>
+                              </select>
+                              <label for="">Trạng Thái:</label>
+                              <select id="inputState" class="form-control">
+                                <option selected>Đang giao</option>
+                                <option></option>
+                              </select>
+                              <label for="">Tổng tiền:</label>
+                              <input class="form-control" type="text" name="">
+                            </div>
+                
+                
+                            <div class="row">
+                              <button type="button" name="" id="" class="col-2 btn btn-light btn-lg btn-block">
+                                <i class="" aria-hidden="true"></i>
+                                Cập Nhật</button>
+                
+                            </div>
+                          </div>
+                          <div class="card-footer text-muted">
+                            Tên Cộng Tác Viên
+                          </div>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+        <!-- TAB DS -->
+        <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+            <div class="container">
+                <div class="row">
+
+                    <div class="tab-pane fade show active" id="cn" role="tabpanel" aria-labelledby="home-tab">
+                        <div class="card">
+                            <div class="card-header">
+                              <i class="" style="vertical-align: middle;" aria-hidden="true"></i>
+                              DANH SÁCH SẢN PHẨM
+                            </div>
+                            <div class="card-body">
+                              <table class="table text-center">
+                                <tr>
+                                  <th>Tên Sản Phẩm</th>
+                                  <th>Trạng Thái</th>
+                                  <th></th>
+                                  <th></th>
+                                  <th></th>
+                                </tr>
+                  
+                                <tbody>
+                                  <tr>
+                                    <td>Sản phẩm nè</td>
+                                    <td>Đang Giao</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td><a href="">Edit</a></td>
+                                  </tr>
+                  
+                                </tbody>
+                              </table>
+                            </div>
+                            <div class="card-footer text-muted">
+                              Tên Nhà Cung Cấp
+                            </div>
+                  
+                          </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <script>
+            $('#exampleModal').on('show.bs.modal', event => {
+                var button = $(event.relatedTarget);
+                var modal = $(this);
+                // Use above variables to manipulate the DOM
+
+            });
+        </script>
+</body>
+
+</html>
