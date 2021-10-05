@@ -23,9 +23,14 @@
             contact.ok200@gmail.com
         </div>
         <div class="top-link">
-            <a href="#"> <i class="fas fa-headset"></i> Liên hệ</a>
+            <div class="gr">
+                <a href="#"> <i class="fas fa-headset"></i> Liên hệ</a>
 
-            <a href="#"> <i class="far fa-question-circle"></i> Hỗ trợ</a>
+                <a href="#"> <i class="far fa-question-circle"></i> Hỗ trợ</a>
+            </div>
+
+
+
         </div>
     </div>
     <div id="hero"
@@ -45,8 +50,31 @@
                 <input type="text"
                     placeholder="Nhập tên sản phẩm">
             </div>
-            <i style="color: white;"
-                class="fas fa-user-circle fa-2x peple"></i>
+            <div class="gr">
+                <a href="">Đăng nhập</a> |
+                <a href="">Đăng kí</a>
+            </div>
+            <div class="account">
+                <div class="acc-info"
+                    onclick="show_acc()">
+                    <img src="https://images.pexels.com/photos/1212984/pexels-photo-1212984.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                        alt=""
+                        class="avt">
+                    <span style="margin-left: 10px;">M.Jock</span>
+                    <i class="fas fa-angle-down"></i>
+                </div>
+                <ul id="acc-menu"
+                    class="acc-menu">
+                    <li><a href=""><i class="fas fa-user-alt"></i>Cập nhật tài khoản</a></li>
+                    <li><a href=""><i class="fas fa-unlock"></i>Đổi mật khẩu</a></li>
+                    <li><a href=""><i class="fab fa-trello"></i>Bán hàng</a></li>
+                    <li><a href=""><i class="fas fa-sign-out-alt"></i>Đăng xuất</a></li>
+                </ul>
+
+            </div>
+            <!-- <i style="color: white;"
+                class="fas fa-user-circle fa-2x peple"></i> -->
+
             <a id="btn-show"
                 onclick="show()"
                 class="show-menu"><i class="fas fa-bars"></i></a>
@@ -54,6 +82,7 @@
 
         </div>
         <nav id="nav-menu">
+
             <h3 class="wtf">DROP SHOP</h3>
             <ul>
 
@@ -76,7 +105,7 @@
 
 
 
-    <div id="text"
+    <!-- <div id="text"
         class="text">
         <h1>Nguồn hàng khổng lồ từ </h1>
         <div class="line"></div>
@@ -98,8 +127,99 @@
         <div class="dangki">
             <button class="btn-ef ">Tạo tài khoản</button>
         </div>
-    </div>
+    </div> -->
 
+    </div>
+    <div class="sanphambanchay">
+        <div class="flag">
+            <h2>
+                <img src="../image/flame.png"
+                    alt="">
+                <span>Sản phẩm nổi bật </span>
+
+            </h2>
+
+        </div>
+        <div class="list-sp">
+            <div class="san-pham">
+                <img width="30px" class="hot" src="../image/icon/flame.png"
+                    alt="">
+
+                <img src="https://images.pexels.com/photos/1852382/pexels-photo-1852382.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                    alt="">
+                <span class="sp-name">Áo sơ mi nữ</span>
+                <span class="sp-ncc"> <i class="fas fa-store-alt"></i> Nhà cung cấp FPT</span>
+                <span class="sp-gia"> <i class="fas fa-dollar-sign"></i> Giá CTV: 340.000 VND</span>
+                <span class="sp-gia"> <i class="fas fa-hand-holding-usd"></i> Giá sỉ (10 cái): 340.000 VND</span>
+                <div class="bottom">
+                    <a href="">Đăng kí sản phẩm</a>
+                    <a href="">Chi tiết</a>
+                </div>
+            </div>
+            <div class="san-pham">
+                <img width="30px" class="hot" src="../image/icon/flame.png"
+                    alt="">
+
+                <img src="https://images.pexels.com/photos/1852382/pexels-photo-1852382.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                    alt="">
+                <span class="sp-name">Áo sơ mi nữ</span>
+                <span class="sp-ncc"> <i class="fas fa-store-alt"></i> Nhà cung cấp FPT</span>
+                <span class="sp-gia"> <i class="fas fa-dollar-sign"></i> Giá CTV: 340.000 VND</span>
+                <span class="sp-gia"> <i class="fas fa-hand-holding-usd"></i> Giá sỉ (10 cái): 340.000 VND</span>
+                <div class="bottom">
+                    <a href="">Đăng kí sản phẩm</a>
+                    <a href="">Chi tiết</a>
+                </div>
+            </div>
+            <div class="san-pham">
+                <img width="30px" class="hot" src="../image/icon/flame.png"
+                    alt="">
+
+                <img src="https://images.pexels.com/photos/1852382/pexels-photo-1852382.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                    alt="">
+                <span class="sp-name">Áo sơ mi nữ</span>
+                <span class="sp-ncc"> <i class="fas fa-store-alt"></i> Nhà cung cấp FPT</span>
+                <span class="sp-gia"> <i class="fas fa-dollar-sign"></i> Giá CTV: 340.000 VND</span>
+                <span class="sp-gia"> <i class="fas fa-hand-holding-usd"></i> Giá sỉ (10 cái): 340.000 VND</span>
+                <div class="bottom">
+                    <a href="">Đăng kí sản phẩm</a>
+                    <a href="">Chi tiết</a>
+                </div>
+            </div>
+            <div class="san-pham">
+                <img width="30px" class="hot" src="../image/icon/flame.png"
+                    alt="">
+
+                <img src="https://images.pexels.com/photos/1852382/pexels-photo-1852382.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                    alt="">
+                <span class="sp-name">Áo sơ mi nữ</span>
+                <span class="sp-ncc"> <i class="fas fa-store-alt"></i> Nhà cung cấp FPT</span>
+                <span class="sp-gia"> <i class="fas fa-dollar-sign"></i> Giá CTV: 340.000 VND</span>
+                <span class="sp-gia"> <i class="fas fa-hand-holding-usd"></i> Giá sỉ (10 cái): 340.000 VND</span>
+                <div class="bottom">
+                    <a href="">Đăng kí sản phẩm</a>
+                    <a href="">Chi tiết</a>
+                </div>
+            </div>
+            <div class="san-pham">
+                <img width="30px" class="hot" src="../image/icon/flame.png"
+                    alt="">
+
+                <img src="https://images.pexels.com/photos/1852382/pexels-photo-1852382.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                    alt="">
+                <span class="sp-name">Áo sơ mi nữ</span>
+                <span class="sp-ncc"> <i class="fas fa-store-alt"></i> Nhà cung cấp FPT</span>
+                <span class="sp-gia"> <i class="fas fa-dollar-sign"></i> Giá CTV: 340.000 VND</span>
+                <span class="sp-gia"> <i class="fas fa-hand-holding-usd"></i> Giá sỉ (10 cái): 340.000 VND</span>
+                <div class="bottom">
+                    <a href="">Đăng kí sản phẩm</a>
+                    <a href="">Chi tiết</a>
+                </div>
+            </div>
+        </div>
+        <div class="bot">
+            <a href="">Xem Thêm</a>
+        </div>
     </div>
 
 
@@ -114,40 +234,64 @@
             id="body-ds"
             class="body">
             <div class="item">
+                <img src="../image/icon/tshirt.png"
+                    alt="">
+                Thời trang nam
+            </div>
+            <div class="item">
+                <img src="../image/icon/dress.png"
+                    alt="">
                 Thời trang nữ
             </div>
             <div class="item">
-                Thời trang nữ
+                <img src="../image/icon/clock.png"
+                    alt="">
+                Đồng hồ
             </div>
             <div class="item">
-                Thời trang nữ
+                <img src="../image/icon/cosmetics.png"
+                    alt="">
+                Mỹ phẩm
             </div>
             <div class="item">
-                Thời trang nữ
+                <img src="../image/icon/devices.png"
+                    alt="">
+                Thiết bị điện tử
             </div>
             <div class="item">
-                Thời trang nữ
+                <img src="../image/icon/hand-bag.png"
+                    alt="">
+                Túi xách
             </div>
             <div class="item">
-                Thời trang nữ
+                <img src="../image/icon/laptop.png"
+                    alt="">
+                Laptop, Máy tính
             </div>
             <div class="item">
-                Thời trang nữ
+                <img src="../image/icon/mobile-app.png"
+                    alt="">
+                Điện thoại,phụ kiện
             </div>
             <div class="item">
-                Thời trang nữ
+                <img src="../image/icon/shoe.png"
+                    alt="">
+                Giày nữ
             </div>
             <div class="item">
-                Thời trang nữ
+                <img src="../image/icon/smart-shoe.png"
+                    alt="">
+                Giày nam
             </div>
             <div class="item">
-                Thời trang nữ
+                <img src="../image/icon/healthcare.png"
+                    alt="">
+                Sức khỏe
             </div>
             <div class="item">
-                Thời trang nữ
-            </div>
-            <div class="item">
-                Thời trang nữ
+                <img src="../image/icon/bracelet.png"
+                    alt="">
+                Trang sức
             </div>
         </div>
     </section>
@@ -280,7 +424,7 @@
         </div>
         <div class="list-ncc">
             <div class="nha-cung-cap">
-                <img src="https://images.pexels.com/photos/821365/pexels-photo-821365.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                <img src="../image/bg-shop.jpg"
                     alt="">
                 <div class="top">
                     <h3><a href="">Thế giới ăn vặt</a></h3>
@@ -522,10 +666,14 @@
         var ds = document.getElementById("body-ds");
         var btn = document.getElementById("btn-show")
         var cl = document.getElementById("close");
+        var acc = document.getElementById("acc-menu");
         cl.addEventListener("click", () => {
             menu.style.right = "-50%"
         })
 
+        function show_acc() {
+            acc.classList.toggle("acc-active")
+        }
         function show() {
             // if (menu.style.display==="none") {
             //     menu.style.display="block";
@@ -547,6 +695,8 @@
                 ds.style.display = "flex"
             }
         }
+
+
     </script>
 </body>
 
