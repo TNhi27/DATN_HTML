@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible"
+        content="IE=edge">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet"
+        href="../css/login_ctv.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+</head>
+
+<body>
+   
+   <div class="hero-login">
+       <div class="content">
+           <a class="back" href=""><i class="fas fa-long-arrow-alt-left"></i> Back</a>
+            <div class="form">
+               
+                <h1>LOGIN</h1>
+                <p>Bạn là Cộng tác viên</p>
+                <form action="">
+
+                    <div class="input-f">
+                        <i class="fas fa-user"></i>
+                        <input type="text" placeholder="Username">
+                    </div>
+                    <div class="input-f">
+                        <i class="fas fa-unlock-alt"></i>
+                        <input type="password" placeholder="Mật khẩu">
+                        <i style="font-size: 16px;" class="fas fa-eye-slash"></i>
+                    </div>
+                </form>
+                <div class="qmk">
+                    <a href="">Quên mật khẩu ?</a>
+                </div>
+                <div class="btn-f">
+                    <a href="">Đăng nhập</a>
+                    <a href="">Đăng kí</a>
+                </div>
+            </div>
+       </div>
+   </div>
+
+
+
+    </div>
+      <footer>
+        <div class="col">
+            <img width="130px"
+                src="../image/logo.png"
+                alt="">
+            Drop là sàn thương mại điện tử về nguồn hàng kinh doanh online giúp kết nối nhà sản xuất với người bán hàng
+            ở khắp cả nước.
+        </div>
+        <div class="col">
+            <h3>Về chúng tôi</h3>
+            <ul>
+                <li>Về chúng tôi</li>
+                <li>Tiêu chuẩn cộng đồng</li>
+                <li>Hướng dẫn sử dụng</li>
+            </ul>
+        </div>
+        <div class="col">
+            <h3>Liên hệ chúng tôi</h3>
+            <ul>
+                <li>Nguyễn Văn Linh, An Khánh, Ninh Kiều, TP.Cần Thơ</li>
+                <li>Email : Contact.ok200@gmail.com</li>
+                <li>Phone : 0948482745</li>
+            </ul>
+            <div class="socal">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-instagram-square"></i>
+            </div>
+        </div>
+    </footer>
+    <script>
+
+        var menu = document.getElementById("nav-menu");
+        var text = document.getElementById("text");
+        var ds = document.getElementById("body-ds");
+        var btn = document.getElementById("btn-show")
+        var cl = document.getElementById("close");
+        cl.addEventListener("click", () => {
+            menu.style.right = "-50%"
+        })
+
+        function show() {
+            // if (menu.style.display==="none") {
+            //     menu.style.display="block";
+            //     text.style.display="none";
+            // }else{
+            //     menu.style.display="none";
+            //     text.style.display="block";
+            // }
+            menu.classList.toggle("menu-active")
+
+        }
+
+
+
+        function showds() {
+            if (ds.style.display !== "none") {
+                ds.style.display = "none"
+            } else {
+                ds.style.display = "flex"
+            }
+        }
+    </script>
+</body>
+
+</html>
