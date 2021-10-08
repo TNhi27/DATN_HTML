@@ -75,7 +75,11 @@
                                     <label for="">Tên Shop</label>
                                     <input class="form-control" type="text" name="">
                                     <label for="">Logo</label>
-                                    <input class="form-control" type="file">
+                                    <img id="poster1" src="${empty item.image?'http://www.eurostrada.net/wp-content/uploads/2015/04/Image-Coming-Soon.png':item.image }" class="img-thumbnail" alt="..."
+                                          style="height: 100px;">
+                                        <input id="image" class="form-control" onchange="chooseFile(this)"
+                                        accept="image/*" type="file" name="image">
+   
                                     <label for="">Địa chỉ</label>
                                     <input class="form-control" type="text" name="">
                                     <label for="">Email</label>
